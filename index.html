@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Mail Application</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Send Your Mail</h1>
+            <button id="theme-toggle">Toggle Light/Dark Mode</button>
+        </header>
+        
+        <form id="mail-form">
+            <div class="form-group">
+                <label for="to">To:</label>
+                <input type="email" id="to" name="to" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit">Send Email</button>
+
+            <div id="loader" class="hidden"></div>
+        </form>
+
+        <div id="toast" class="hidden">Email sent successfully!</div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
